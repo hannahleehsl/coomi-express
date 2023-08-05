@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coomi Express</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Comfortaa:wght@500&family=DM+Sans:wght@600&family=Days+One&family=Source+Code+Pro&family=Space+Grotesk:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header-contact">
+      <nav>
+        <a href="index.html"><img src="images/image8.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+    <section class="contact">
+      <div class="contact_container">
+        <div class="contact_row">
+          <h1>Need an Estimate or Have a Question?</h1>
+        </div>
+        <div class="contact_row">
+          <h4 style="text-align: center">We'd love to hear from you!</h4>
+        </div>
+        <div class="row-input-container">
+          <div class="col-xs-12">
+            <div class="styled-input wide">
+              <input type="text" id="name" required />
+              <label for="name">Name</label>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="styled-input">
+              <input type="email" id="email" required />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="styled-input" style="float: right">
+              <input type="tel" id="phone" required />
+              <label for="phone">Phone Number</label>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="styled-input wide">
+              <textarea id="message" required></textarea>
+              <label for="message">Message</label>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="btn-lrg submit-btn" id="submitBtn">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/86bafdf561.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
