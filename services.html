@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coomi Express</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Comfortaa:wght@500&family=DM+Sans:wght@600&family=Days+One&family=Source+Code+Pro&family=Space+Grotesk:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="services_sub-header">
+      <nav>
+        <a href="index.html"><img src="images/image8.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Services</h1>
+    </section>
+    <section class="services2">
+      <div class="serv-row">
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-truck"> </i>
+            </div>
+            <h3>Freight Transportation</h3>
+            <p>
+              Our freight transportation service is the backbone of our
+              operations, ensuring efficient and reliable delivery of goods.
+              With state-of-the-art logistics solutions and a vast network, we
+              handle shipments of all sizes with utmost care. Whether it's local
+              or interstate transport, our experienced team guarantees timely
+              and secure deliveries. Partner with us for seamless freight
+              transportation and experience the ease of moving goods.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-plane"> </i>
+            </div>
+            <h3>Airport Deliveries</h3>
+            <p>
+              Time-sensitive shipments demand swift and reliable solutions, and
+              our airport delivery service fits the bill perfectly. With a focus
+              on speed and precision, we specialize in delivering your cargo
+              directly to and from airports, ensuring quick transfers and prompt
+              dispatch. Trust us to handle your urgent shipments, and we'll make
+              sure they reach their destination with maximum efficiency and
+              minimum delay.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-map"> </i>
+            </div>
+            <h3>Long-Distance Transportation</h3>
+            <p>
+              Covering vast distances requires expertise and dedication, and our
+              long-distance transportation service excels in both. Whether it's
+              cross-country or cross-state deliveries, our fleet of
+              well-maintained trucks and skilled drivers ensure safe and
+              punctual transportation. Count on us for cost-effective solutions,
+              constant updates, and personalized support throughout the journey.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/86bafdf561.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
