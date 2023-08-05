@@ -1,10 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coomi Express</title>
-</head>
-<body>
+    <style>
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Comfortaa:wght@500&family=DM+Sans:wght@600&family=Days+One&family=Source+Code+Pro&family=Space+Grotesk:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="home_section" class="header">
+      <nav>
+        <a href="index.html"><img src="images/image8.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Texas-Based Trucking Company</h1>
+        <p>
+          Need transportation services? We at Coomi promise to deliver your<br />
+          goods on time and for a reasonable price. Based in Grapevine, TX, we
+          can<br />deliver your goods to almost anywhere in the state.
+        </p>
+        <a href="about.html" class="btn">LEARN MORE</a>
+      </div>
+    </section>
 
-</body>
+    <section id="about_section" class="about">
+      <h1>ABOUT US</h1>
+      <div class="row">
+        <div class="statement">
+          <h3>Our Vision</h3>
+          <p>
+            In our vision, we see strong partnerships and long-term
+            relationships with our clients. By understanding their unique needs
+            and providing customized solutions, we aim to be their trusted
+            transportation partner, contributing to their success and growth.
+          </p>
+        </div>
+        <div class="statement">
+          <h3>Our Mission</h3>
+          <p>
+            Our mission at Coomi.inc is to provide exceptional transportation
+            services with a steadfast commitment to reliability, safety, and
+            customer satisfaction. We aim to be the preferred choice for our
+            clients by delivering goods efficiently and on time, while
+            maintaining the highest standards of professionalism and integrity.
+          </p>
+        </div>
+        <div class="statement">
+          <h3>Our Promise</h3>
+          <p>
+            Whether you are a small business owner, a large corporation, or an
+            individual with shipping needs, Texas Trucking Solutions is here to
+            provide reliable, efficient, and cost-effective transportation
+            solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <h1>OUR SERVICES</h1>
+      <div class="service-row">
+        <div class="service-col">
+          <img src="images/service1.jpg" />
+          <div class="layer">
+            <h3>Freight Transportation</h3>
+          </div>
+        </div>
+        <div class="service-col">
+          <img src="images/service2.jpg" />
+          <div class="layer">
+            <h3>Airport Deliveries</h3>
+          </div>
+        </div>
+        <div class="service-col">
+          <img src="images/service3.jpg" />
+          <div class="layer">
+            <h3>Long-Distance Transportation</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="join">
+      <h1>JOIN OUR TEAM</h1>
+      <p>
+        Interested in joining our team and starting a career in the trucking
+        industry?
+      </p>
+      <div class="join_container">
+        <div class="join_wrapper">
+          <div class="join_image">
+            <img src="" alt="" />
+          </div>
+          <div class="join_content">
+            <div class="join_icon">
+              <i class="fas fa-cloud-upload-alt"></i>
+            </div>
+            <div class="join_text">Upload your resume now!</div>
+          </div>
+          <div id="cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="file-name">File name here</div>
+        </div>
+        <button type="button" onclick="defaultBtnActive()" id="custom-btn">
+          Choose a file
+        </button>
+        <input type="file" id="default-btn" name="resume" hidden required />
+      </div>
+      <button type="submit">Submit</button>
+    </section>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Our team at Coomi is readily available to answer any questions, provide
+        updates, and address concerns throughout<br />the shipping process,
+        giving you peace of mind knowing that your cargo is in capable hands.
+      </p>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const wrapper = document.querySelector(".join_wrapper");
+      const fileName = document.querySelector(".file-name");
+      const defaultBtn = document.querySelector("#default-btn");
+      const customBtn = document.querySelector("#custom-btn");
+      const cancelBtn = document.querySelector("#cancel-btn i");
+      const img = document.querySelector("img");
+      let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
+      function defaultBtnActive() {
+        defaultBtn.click();
+      }
+      defaultBtn.addEventListener("change", function () {
+        const file = this.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function () {
+            const result = reader.result;
+            img.src = result;
+            wrapper.classList.add("active");
+          };
+          cancelBtn.addEventListener("click", function () {
+            img.src = "";
+            wrapper.classList.remove("active");
+          });
+          reader.readAsDataURL(file);
+        }
+        if (this.value) {
+          let valueStore = this.value.match(regExp);
+          fileName.textContent = valueStore;
+        }
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/86bafdf561.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
