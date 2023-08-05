@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coomi Express</title>
+    <style>
+      a {
+        color: inherit;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Comfortaa:wght@500&family=DM+Sans:wght@600&family=Days+One&family=Source+Code+Pro&family=Space+Grotesk:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/image8.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+    <section class="about_row">
+      <section class="image_col">
+        <img src="images/work.jpg" />
+      </section>
+      <section class="aboutus">
+        <h1>Coomi Inc.</h1>
+        <h2>The trucking company that you can trust</h2>
+        <p>
+          Customer service is at the core of everything we do. From the moment
+          you contact us to the successful delivery of your shipment, our
+          friendly and knowledgeable staff will be with you every step of the
+          way. We believe in open communication, transparent pricing, and a
+          hassle-free experience for our valued clients. Whether you need local
+          transport within Texas or long-haul deliveries across state lines,
+          Coomi has the expertise and resources to handle it all. We pride
+          ourselves on building lasting relationships with our customers, and we
+          are committed to being the reliable partner you can count on for all
+          your freight transportation needs.
+        </p>
+        <a href="contact.html" class="about_btn">CONTACT US</a>
+      </section>
+    </section>
+    <section class="about_sections">
+      <div class="row">
+        <div class="info">
+          <h3>Call Us</h3>
+          <p><a href="tel:+1234567890">1+(469)416-8648</a></p>
+        </div>
+        <div class="info">
+          <h3>Location</h3>
+          <p>
+            Our trucking warehouse is based in Coppell, TX while our operations
+            are managed in Grapevine, TX.
+          </p>
+        </div>
+        <div class="info">
+          <h3>Hours</h3>
+          <p>
+            Mon-Fri: 6AM-10PM<br />
+            Sat-Sun: 8AM-8PM
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
