@@ -165,8 +165,7 @@ nav .fa{
     font-weight: 600;
 }
 .contact_row h4{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 .statement h3{
     font-size: 20px;
@@ -198,7 +197,8 @@ nav .fa{
 /* ///// inputs /////*/
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
     font-size: 0.75em;
-    color: #999;
+    color: 
+    #999;
     top: -5px;
     -webkit-transition: all 0.225s ease;
     transition: all 0.225s ease;
@@ -263,7 +263,7 @@ textarea {
 .contact_container {
     width: 650px;
     max-width: 100%;
-    margin: 20px auto 25px auto;
+    margin: 25px auto 25px auto;
 }
 
 .submit-btn {
@@ -651,4 +651,35 @@ input[type=checkbox]:checked + label {
     text-transform: uppercase;
     cursor: pointer;
     background: linear-gradient(135deg,#2d2d2d 0%,rgb(0, 44, 153) 100%);
+}
+
+form {
+    margin-top: 15%;
+    text-align: center;
+}
+
+.login_container{
+    margin-left: 35%; 
+    margin-right: 42%;
+}
+  /* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+  
+/* Avatar image */
+img.avatar {
+    width: 13%;
+}
+  
+  /* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
 }
