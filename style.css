@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
     max-width: 100%;
 }
 .header{
@@ -49,15 +49,16 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    color:#ACB1BF;
+    color:#dde0e8;
     text-decoration: none;
     font-size: 16px;
+    font-weight: 500;
 }
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background: #7b8ab2;
+    background: #d3d9eb;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -67,7 +68,7 @@ nav img{
 }
 .text-box{
     width: 90%;
-    color:#ACB1BF;
+    color:#dce0e9;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -75,7 +76,7 @@ nav img{
     text-align: center;
 }
 body{
-    background-color: rgba(191, 199, 228, 0.781);
+    background-color: rgb(237, 241, 248);
 }
 .text-box h1{
     font-size: 30px;
@@ -152,7 +153,7 @@ nav .fa{
 }
 .contact{
     width: 80%;
-    margin: auto;
+    margin-left: 10%;
     text-align: center;
     padding-top: 60px;
 }
@@ -169,11 +170,12 @@ nav .fa{
 }
 .statement h3{
     font-size: 20px;
+    color: #e0e0f4;
 }
 .statement p{
-    color: #5B5B7B;
+    color: #e0e0f4;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 22px;
     padding: 10px;
 }
@@ -184,8 +186,8 @@ nav .fa{
 }
 .statement{
     flex-basis: 31%;
-    background: #9cadda;
-    border-radius: 30px;
+    background: #131e3a;
+    border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
@@ -197,8 +199,7 @@ nav .fa{
 /* ///// inputs /////*/
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
     font-size: 0.75em;
-    color: 
-    #999;
+    color:#999;
     top: -5px;
     -webkit-transition: all 0.225s ease;
     transition: all 0.225s ease;
@@ -229,7 +230,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     pointer-events: none;
 }
 
-.styled-input.wide { 
+.styled-input.wide {
     width: 650px;
     max-width: 100%;
 }
@@ -306,7 +307,7 @@ input[type=checkbox]:checked + label {
   font-style: normal;
 }
 .footer{
-    background: #dce0ec;
+    background: #efefef;
     width: 100%;
     text-align: center;
     padding-top: 40px;
@@ -316,6 +317,11 @@ input[type=checkbox]:checked + label {
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
+    font-size: 10px;
+}
+
+.footer p{
+  font-size: 8px;
 }
 .sub-header{
     height: 50vh;
