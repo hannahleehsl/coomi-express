@@ -10,7 +10,7 @@ app = Flask(__name__)
 SMTP_SERVER = os.environ.get('SMTP_SERVER', 'smtp.gmail.com')
 SMTP_PORT = os.environ.get('SMTP_PORT', 587)
 SMTP_USERNAME = os.environ.get('SMTP_USERNAME', 'hannahsooahlee2004@gmail.com')
-SMTP_PASSWORD = os.environ.get('SMTP_PASSWORD', 'Jongsooah2004=')
+SMTP_PASSWORD = os.environ.get('SMTP_PASSWORD', 'PASSWORD')
 SENDER_EMAIL = os.environ.get('SENDER_EMAIL', 'hannahsooahlee2004@gmail.com')
 RECEIVER_EMAIL = os.environ.get('RECEIVER_EMAIL', 'sales@coomiexpress.com')
 
